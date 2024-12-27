@@ -101,8 +101,10 @@ header{
     padding: 40px;
 }
 
-.wrapper .form-box.login{
-    display: none;
+
+.wrapper .form-box .register {
+    position: absolute;
+    transform: translateX(400px);
 }
 
 .wrapper .icon-close {

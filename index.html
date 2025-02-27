@@ -16,18 +16,19 @@
     <header>
         <h2 class="logo">Logo</h2>
         <nav class="navigation">
-            <a href="#">Home</a>
+            <a onclick="reloadPage()" href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
+            <button  onclick="play()" class="btnLogin-popup">Login</button>
         </nav>
     </header>
 
     <div class="wrapper">
         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
 
-        <div style="display: none;" class="for-box login">
+        <!-- login Start -->
+        <div id="login" style="display: none;" class="for-box login">
             <h2>Login</h2>
             <form action="#">
                 <div class="input-box">
@@ -52,9 +53,11 @@
                 </div>
             </form>
         </div>
+        <!-- login End -->
 
 
-        <div class="for-box register">
+        <!-- Registration Start -->
+        <div id="Registration" style="" class="for-box register ">
             <h2>Registration</h2>
             <form action="#">
                 <div class="input-box">
@@ -84,8 +87,12 @@
                 </div>
             </form>
         </div>
+        <!-- Registration End -->
 
     </div>
 
 </body>
+
+<script src="script/game.js"></script>
+
 </html>
